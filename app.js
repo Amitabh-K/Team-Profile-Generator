@@ -179,3 +179,18 @@ function promptUser() {
           }
         ])
       }
+
+      function iterate(answer) {
+        if (answer.add === 'yes') {
+          initiate()
+        }
+        else {
+          try {
+            fs.appendFileSync("./output/main.html", `</div></div></body></html>`);
+          }
+          catch {
+            console.error("Unable to write to engineer file.");
+          }
+          process.exit(0);
+        }
+      };
