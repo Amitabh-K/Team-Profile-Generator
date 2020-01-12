@@ -194,3 +194,15 @@ function promptUser() {
           process.exit(0);
         }
       };
+
+      async function initiate() {
+        try {
+          const addUser = await promptUser();
+          const role = await generateRoleQ(addUser);
+          await addCards(addUser, role);
+          const answer = await addEmp();
+          await iterate(answer);
+        } catch (err) {
+          console.log(err);
+        }
+      };
