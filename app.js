@@ -22,7 +22,19 @@ function promptUser() {
         {
           message: "Please enter your email",
           name: "email",
-          type: "input"
+          type: "input",
+          default: function() {},
+          validate: function (email) {
+  
+              valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+  
+              if (valid) {
+                  return true;
+              } else {
+                  console.log(".  Please enter a valid email")
+                  return false;
+              }
+          }
         },
         {
           message: "Please enter your Role",
@@ -35,9 +47,7 @@ function promptUser() {
           ]
         }
       ]);
-      
   }
-  
 
   function generateRoleQ(input) {
     if (input.role === 'Manager') {
