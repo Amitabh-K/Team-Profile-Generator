@@ -54,7 +54,7 @@ function promptUser() {
     if (input.role === 'Manager') {
       return inquirer.prompt([
         {
-          message: "Please enter your office number",
+          message: "Enter your office number format 123 123 1234",
           name: "officenumber",
           type: "any",
           default: () => {},
@@ -233,32 +233,23 @@ function promptUser() {
       };
       
       var content;
-function resetHtml(){
-fs.readFile('./templates/main.html', function read(err, data) {
-    if (err) {
-        throw err;
-    }
-    content = data;
-   processFile();       
-}); 
-}
-
-function processFile() {
-  fs.writeFile("./output/main.html", content, function (err) {
-    if (err) {
-      throw err;
-    }
-    open_html()
-
-  });
-}
-
-
-resetHtml();
-initiate();
-
-async function open_html(filename='./output/main.html') {  
-  await open(filename, {wait: true});
-  console.log('Opening: ' + __dirname + "\\output\\main.html")
-  
-};
+      function resetHtml(){
+        fs.readFile('./templates/main.html', function read(err, data) {
+            if (err) {
+                throw err;
+            }
+            content = data;
+           processFile();       
+        }); 
+        }
+        
+        function processFile() {
+          fs.writeFile("./output/main.html", content, function (err) {
+            if (err) {
+              throw err;
+            }
+          });
+        }
+        
+        resetHtml();
+        initiate();
