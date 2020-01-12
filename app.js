@@ -36,3 +36,35 @@ function promptUser() {
         }
       ]);
   }
+
+  function generateRoleQ(input) {
+    if (input.role === 'Manager') {
+      return inquirer.prompt([
+        {
+          message: "Enter your office number",
+          name: "officenumber",
+          type: "number"
+        }
+      ])
+    }
+  
+    if (input.role === 'Intern') {
+      return inquirer.prompt([
+        {
+          type: 'input',
+          name: 'school',
+          message: 'Enter name of your School'
+        }
+      ]);
+    }
+  
+    if (input.role === 'Engineer') {
+      return inquirer.prompt([
+        {
+          message: "Enter your github account name",
+          name: "github",
+          type: "input"
+        }
+      ])
+    }
+  }
