@@ -7,6 +7,10 @@ The user can input any number of team members, and they may be a mix of engineer
 
 ![Usage demo](./Assets/demo.gif)
 
+## Test demo
+
+![Test](./Assets/test.gif)
+
 ## Table of Contents
 
 - [Description](#description)
