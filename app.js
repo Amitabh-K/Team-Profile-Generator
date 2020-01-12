@@ -164,3 +164,18 @@ function promptUser() {
         }
       }
     }
+
+// 🔁Decision exit or remain in the loop 
+    function addEmp() {
+        return inquirer.prompt([
+          {
+            message: "Would you like to add an employee to the team?",
+            name: "add",
+            type: "list",
+            choices: [
+              'yes',
+              'no',
+            ]
+          }
+        ])
+      }
