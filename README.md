@@ -61,6 +61,8 @@ jest npm package
 
 ## Acknowledgments
 
+*Thanks to Josh Sherman as I drew inspiration from the article on "Interactive Command-line Prompts with Inquirer.js"  at https://alligator.io/nodejs/interactive-command-line-prompts/
+
 * Ali Maqsood & David Bland's (instructors) help on the content delivery
 
 ![Employee Summary 1](./Assets/10-OOP-homework-demo-1)

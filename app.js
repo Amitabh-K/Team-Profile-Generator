@@ -35,7 +35,9 @@ function promptUser() {
           ]
         }
       ]);
+      
   }
+  
 
   function generateRoleQ(input) {
     if (input.role === 'Manager') {
