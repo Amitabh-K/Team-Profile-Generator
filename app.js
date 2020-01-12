@@ -242,7 +242,7 @@ function promptUser() {
            processFile();       
         }); 
         }
-        
+
         function processFile() {
           fs.writeFile("./output/main.html", content, function (err) {
             if (err) {
@@ -251,5 +251,10 @@ function promptUser() {
           });
         }
         
+      //   (async () => {          
+      //     await open('./output/main.html', {wait: true});
+      //     console.log('Done');     
+      // })();
+         
         resetHtml();
         initiate();
