@@ -4,6 +4,7 @@ const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
+const open = require ("open")
 
 
 function promptUser() {
@@ -64,7 +65,7 @@ function promptUser() {
               if (valid) {
                   return true;
               } else {
-                  console.log(".  Please enter a valid office number")
+                  console.log(".  Enter a valid office number & format 123 123 1234")
                   return false;
               }
           }
@@ -247,8 +248,17 @@ function processFile() {
     if (err) {
       throw err;
     }
+    open_html()
+
   });
 }
 
+
 resetHtml();
 initiate();
+
+async function open_html(filename='./output/main.html') {  
+  await open(filename, {wait: true});
+  console.log('Opening: ' + __dirname + "\\output\\main.html")
+  
+};
