@@ -17,13 +17,13 @@ function promptUser() {
         {
           message: "Please enter your id",
           name: "id",
-          type: "number"
+          type: "any"
         },
         {
           message: "Please enter your email",
           name: "email",
           type: "input",
-          default: function() {},
+          default: () => {},
           validate: function (email) {
   
               valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
@@ -55,7 +55,19 @@ function promptUser() {
         {
           message: "Please enter your office number",
           name: "officenumber",
-          type: "number"
+          type: "any",
+          default: () => {},
+          validate: function (officeNumber) {
+  
+              valid = /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/.test(officeNumber)
+  
+              if (valid) {
+                  return true;
+              } else {
+                  console.log(".  Please enter a valid office number")
+                  return false;
+              }
+          }
         }
       ])
     }
