@@ -1,0 +1,23 @@
+{
+  "name": "template-engine---employee-summary",
+  "version": "1.0.0",
+  "description": "Team profile generator",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "\"jest --verbose test/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amitabh-K/Template-Engine---Employee-Summary.git"
+  },
+  "author": "Amitabh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amitabh-K/Template-Engine---Employee-Summary/issues"
+  },
+  "homepage": "https://github.com/Amitabh-K/Template-Engine---Employee-Summary#readme"
+}
