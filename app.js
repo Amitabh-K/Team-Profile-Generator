@@ -41,7 +41,7 @@ function promptUser() {
     if (input.role === 'Manager') {
       return inquirer.prompt([
         {
-          message: "Enter your office number",
+          message: "Please enter your office number",
           name: "officenumber",
           type: "number"
         }
@@ -53,7 +53,7 @@ function promptUser() {
         {
           type: 'input',
           name: 'school',
-          message: 'Enter name of your School'
+          message: 'Please enter name of your School'
         }
       ]);
     }
@@ -61,7 +61,7 @@ function promptUser() {
     if (input.role === 'Engineer') {
       return inquirer.prompt([
         {
-          message: "Enter your github account name",
+          message: "Please enter your github account name",
           name: "github",
           type: "input"
         }
