@@ -206,13 +206,25 @@ function promptUser() {
           console.log(err);
         }
       };
-     
-      function resetHtml(){
-        fs.readFile('./templates/main.html', function read(err, data) {
-            if (err) {
-                throw err;
-            }
-            var content = data;
-           processFile();       
-        }); 
-        }
+      
+      var content;
+function resetHtml(){
+fs.readFile('./templates/main.html', function read(err, data) {
+    if (err) {
+        throw err;
+    }
+    content = data;
+   processFile();       
+}); 
+}
+
+function processFile() {
+  fs.writeFile("./output/main.html", content, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+}
+
+resetHtml();
+initiate();
