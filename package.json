@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Amitabh-K/Template-Engine---Employee-Summary#readme",
   "dependencies": {
     "inquirer": "^7.0.3",
+    "jest": "^24.9.0",
     "open": "^7.0.0"
   }
 }
