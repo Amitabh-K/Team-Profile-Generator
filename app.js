@@ -95,6 +95,7 @@ function promptUser() {
     }
   }
 
+<<<<<<< HEAD
   function addCards(response, roleQ) {
       if (response.role === 'Manager') {
         const officenumber = roleQ.officenumber;
@@ -190,6 +191,8 @@ function promptUser() {
         }
       }
       
+=======
+>>>>>>> be8d14f5d0106393f56adf484e251e9b8f3d847b
 // 🔁Decision exit or remain in the loop 
     function addEmp() {
         return inquirer.prompt([
