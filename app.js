@@ -2,7 +2,6 @@ const Employee = require("./lib/employee");
 const Engineer = require("./lib/engineer");
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
-const addCards = require("./lib/addEmployee");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const open = require ("open")
@@ -95,7 +94,6 @@ function promptUser() {
     }
   }
 
-<<<<<<< HEAD
   function addCards(response, roleQ) {
       if (response.role === 'Manager') {
         const officenumber = roleQ.officenumber;
@@ -183,7 +181,7 @@ function promptUser() {
                 </div>`;
       
           try {
-            fs.appendFileSync("../output/main.html", `${engineerCard}`);
+            fs.appendFileSync("./output/main.html", `${engineerCard}`);
           }
           catch {
             console.error("Unable to write to engineer file.");
@@ -191,8 +189,7 @@ function promptUser() {
         }
       }
       
-=======
->>>>>>> be8d14f5d0106393f56adf484e251e9b8f3d847b
+
 // 🔁Decision exit or remain in the loop 
     function addEmp() {
         return inquirer.prompt([
