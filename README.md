@@ -32,18 +32,16 @@ A simple github profile generator application with dynamically updated HTML and 
 ## Features
 
 - Quick and easy to use
-- Options to choose general color available
-- Displays: picture, name, company, location, GitHub URL, blog URL, count of repos, count of starred repos, count of followers, and count of people following
+- The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns.
+- This application passes all unit tests. When the user has completed building the team, the application creates an HTML file that displays a team roster based on the information provided by the user.
 
 ## Getting-Started
 
-The application will be invoked with the following command: node index.js. The user will be prompted for their GitHub username as well as their favorite color. The app will then generate a html file and a pdf file with the user's GitHub information and favorite color set to the background.
+The application will be invoked with the following command: node app.js. 
 
 ## Link
 
-- The sample ouput can be accessed via the link https://amitabh-k.github.io/Developer-Profile-Generator/
-
-- The code can be accessed via the link  https://github.com/Amitabh-K/Developer-Profile-Generator
+- The code can be accessed via the link  https://github.com/Amitabh-K/Template-Engine-Employee-Summary
 
 ## Technologies
 
