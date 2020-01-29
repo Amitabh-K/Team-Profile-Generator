@@ -63,5 +63,3 @@ jest npm package
 
 * Ali Maqsood & David Bland's (instructors) help on the content delivery
 
-![Employee Summary 1](./Assets/10-OOP-homework-demo-1)
-![Employee Summary 2](./Assets/10-OOP-homework-demo-2)
