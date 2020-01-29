@@ -22,7 +22,7 @@ The user can input any number of team members, and they may be a mix of engineer
 - [Author](#Author)
 - [Acknowledgments](#Acknowledgments)
 
-![ Developer-Profile-Generator](./Assets/Developer-Profile-Generator.PNG)
+
 
 
 ## Description
